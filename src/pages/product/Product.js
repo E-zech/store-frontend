@@ -47,7 +47,7 @@ export default function Product() {
 
     useEffect(() => {
         setLoader(true);
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`https://store-backend-midm.onrender.com/products/${id}`, {
             credentials: 'include',
             headers: {
                 'Authorization': localStorage.token,

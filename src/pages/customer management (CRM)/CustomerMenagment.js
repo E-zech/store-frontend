@@ -13,7 +13,7 @@ export default function CustomerMenagment() {
 
   useEffect(() => {
     setLoader(true);
-    fetch(`http://localhost:5000/users`, {
+    fetch(`https://store-backend-midm.onrender.com/users`, {
       credentials: 'include',
       headers: {
         'Authorization': localStorage.token
@@ -64,7 +64,7 @@ export default function CustomerMenagment() {
       setLoader(false);
       return;
     }
-    fetch(`http://localhost:5000/users/${clientID}`, {
+    fetch(`https://store-backend-midm.onrender.com/users/${clientID}`, {
       credentials: 'include',
       headers: { 'Authorization': localStorage.token },
       method: 'DELETE',

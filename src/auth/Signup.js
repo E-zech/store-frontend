@@ -38,7 +38,7 @@ export default function Signup() {
     });
 
 
-    fetch(`http://localhost:5000/signup`, {
+    fetch(`https://store-backend-midm.onrender.com/signup`, {
       credentials: 'include',
       method: 'POST',
       headers: {

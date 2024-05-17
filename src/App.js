@@ -68,7 +68,7 @@ export default function App() {
             const decodedToken = jwtDecode(localStorage.token);
             const userId = decodedToken.userId;
 
-            fetch(`http://localhost:5000/users/${userId}`, {
+            fetch(`https://store-backend-midm.onrender.com/users/${userId}`, {
                 credentials: 'include',
                 headers: {
                     'Authorization': localStorage.token,
@@ -103,7 +103,7 @@ export default function App() {
 
     useEffect(() => {
         setLoader(true)
-        fetch(`http://localhost:5000/products`, {
+        fetch(`https://store-backend-midm.onrender.com/products`, {
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ export default function App() {
 
     useEffect(() => {
         setLoader(true);
-        fetch("http://localhost:5000/cart", {
+        fetch("https://store-backend-midm.onrender.com/cart", {
             credentials: 'include',
             headers: { "Content-Type": "application/json", 'Authorization': localStorage.token, }
         })
@@ -139,7 +139,7 @@ export default function App() {
     const add2Cart = (productId, title, price) => {
         const quantity = 1;
         const products = [{ productId, quantity, price }];
-        fetch(`http://localhost:5000/cart/add`, {
+        fetch(`https://store-backend-midm.onrender.com/cart/add`, {
             method: 'POST',
             credentials: 'include',
             headers: {

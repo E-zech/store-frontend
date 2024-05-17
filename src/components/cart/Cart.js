@@ -43,7 +43,7 @@ export default function Cart() {
     };
 
     const saveChanges = () => {
-        fetch(`http://localhost:5000/cart/add`, {
+        fetch(`https://store-backend-midm.onrender.com/cart/add`, {
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -76,7 +76,7 @@ export default function Cart() {
 
     const removeFromCart = (id) => {
         if (window.confirm(`Are you sure you want to delete ${id ? 'this product' : 'all products'} ?`)) {
-            const url = id ? `http://localhost:5000/cart/delete/${id}` : `http://localhost:5000/cart/delete-all`;
+            const url = id ? `https://store-backend-midm.onrender.com/cart/delete/${id}` : `https://store-backend-midm.onrender.com/cart/delete-all`;
             fetch(url, {
                 method: 'DELETE',
                 credentials: 'include',

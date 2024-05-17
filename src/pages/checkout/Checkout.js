@@ -24,7 +24,7 @@ export default function Checkout() {
         });
         setLoader(true);
 
-        fetch(`http://localhost:5000/users/${user._id}`, {
+        fetch(`https://store-backend-midm.onrender.com/users/${user._id}`, {
             credentials: 'include',
             method: 'PUT',
             headers: { 'Content-type': 'application/json', 'Authorization': localStorage.token },

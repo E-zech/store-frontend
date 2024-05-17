@@ -12,7 +12,7 @@ export default function FavProducts() {
 
     useEffect(() => {
         setLoader(true);
-        fetch(`http://localhost:5000/products/my-faves-products`, {
+        fetch(`https://store-backend-midm.onrender.com/products/my-faves-products`, {
             credentials: 'include',
             headers: {
                 'Authorization': localStorage.token,

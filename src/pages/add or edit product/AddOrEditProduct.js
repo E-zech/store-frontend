@@ -34,7 +34,7 @@ export default function AddOrEditProduct() {
     useEffect(() => {
         if (id) {
             setLoader(true);
-            fetch(`http://localhost:5000/products/${id}`, {
+            fetch(`https://store-backend-midm.onrender.com/products/${id}`, {
                 credentials: 'include',
                 headers: {
                     'Authorization': localStorage.token,
@@ -89,7 +89,7 @@ export default function AddOrEditProduct() {
             }
         });
 
-        const url = id ? `http://localhost:5000/products/${id}` : `http://localhost:5000/products`;
+        const url = id ? `https://store-backend-midm.onrender.com/products/${id}` : `https://store-backend-midm.onrender.com/products`;
         const methood = id ? 'PUT' : 'POST';
         fetch(url, {
             credentials: 'include',

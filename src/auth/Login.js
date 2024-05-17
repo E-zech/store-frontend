@@ -65,7 +65,7 @@ export default function Login() {
         const data = new FormData(event.currentTarget);
         setLoader(true);
 
-        fetch(`http://localhost:5000/users/login`, {
+        fetch(`https://store-backend-midm.onrender.com/users/login`, {
             credentials: 'include',
             method: 'POST',
             headers: { 'Content-type': 'application/json' },

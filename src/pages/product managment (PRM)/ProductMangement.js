@@ -34,7 +34,7 @@ export default function ProductMangement() {
 
     useEffect(() => {
         setLoader(true)
-        fetch(`http://localhost:5000/products`, {
+        fetch(`https://store-backend-midm.onrender.com/products`, {
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',

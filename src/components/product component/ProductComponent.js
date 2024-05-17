@@ -56,7 +56,7 @@ export default function ProductComponent({ product }) {
     if (user) {
       const snackbarMessage = isFavorite ? 'Removed from Favorites' : 'Added to Favorites';
 
-      fetch(`http://localhost:5000/products/faves/${id}`, {
+      fetch(`https://store-backend-midm.onrender.com/products/faves/${id}`, {
         credentials: 'include',
         method: 'PATCH',
         headers: {
@@ -89,7 +89,7 @@ export default function ProductComponent({ product }) {
     setLoader(true);
     const isConfirmed = window.confirm("Are you sure you want to delete this product?");
     if (isConfirmed) {
-      fetch(`http://localhost:5000/products/${id}`, {
+      fetch(`https://store-backend-midm.onrender.com/products/${id}`, {
         credentials: 'include',
         method: 'DELETE',
         headers: {
