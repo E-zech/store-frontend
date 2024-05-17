@@ -14,7 +14,7 @@ export default function Home() {
 
     useEffect(() => {
         setLoader(true)
-        fetch(`http://localhost:5000/products`, {
+        fetch(`https://store-backend-midm.onrender.com:16.16.0/products`, {
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
