@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import PopUpLogin from './components/popUpLogin/PopUpLogin';
 
 export const GeneralContext = createContext();
-
+//test
 export default function App() {
     const [user, setUser] = useState();
     const [loader, setLoader] = useState(true);
