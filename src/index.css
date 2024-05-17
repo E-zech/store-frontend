@@ -1,0 +1,13 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,0..100;1,9..144,100..900,0..100&display=swap');
+
+  .root-wrapper{
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Fraunces", serif;
+} 
+

@@ -1,0 +1,89 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #99c8c2;
+    gap: 30px;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    /* margin-top: 2px; */
+  } 
+  
+  .footerTop {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    font-weight: bold;
+    /* color: #474c4bed; */
+  }
+  
+  .footerBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  .footer-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-icons > a  {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-icons > a > * {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footerHr {
+    border: solid 2px #dfe9e8;
+    width: 100%;
+    border-radius: 57%;
+  }
+  
+  .footerBottom > div:last-child {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+  }
+  
+
+.footerLogo:hover{
+cursor: pointer;
+}
+
+.footerAboutBtn:hover{
+cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .footerTop{
+      width: 85%;
+      justify-content: space-evenly;
+      gap:8px;
+    }
+}
+@media screen and (max-width:800px){
+    .footerTop{
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 0px;
+    }
+}

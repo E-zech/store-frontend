@@ -1,0 +1,37 @@
+.favContainer{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartWrapper {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 85px;
+    max-width: 2000px;
+    bottom: 10px;
+    left: 10px;
+    right: 0;
+}
+
+@media screen and (max-width: 1850px) {
+    .cartWrapper {
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        width: 85px;
+        max-width: 2000px;
+        bottom: 10px;
+        left: 10px;
+        right: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cartWrapper {
+        bottom: 0px;
+        left: 0px;
+    }
+
+}

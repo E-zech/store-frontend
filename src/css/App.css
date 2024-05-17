@@ -1,0 +1,104 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;  
+    user-select: none; 
+}
+
+.main-title,
+.homePage-title,
+.form-title
+{
+    text-align: center;
+    color: #282d2c; 
+    font-size: 2.7rem;
+}
+
+.main-title{
+    padding: 40px 0px 7px 0px;
+    margin-top: 70px;
+}
+
+.homePage-title{
+    padding: 40px 0px 7px 0px;
+}
+
+.form-title{
+padding: 0;
+}
+
+.sec-title{
+    color: #3c4240; 
+    font-size: 1.6rem;
+    padding: 20px 0px;
+}
+
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+.hr{
+    margin: 0 auto;
+    width: 72vw;
+    border-radius: 50%;
+    border: 4px double #00000094;
+}
+
+@media screen and (max-width:1000px) {
+    .main-title,
+    .homePage-title{
+        font-size: 2.5rem ; 
+        padding: 30px 0px 5px 0px;
+    }
+    .sec-title{
+        font-size: 1.3rem ;
+        padding: 20px 10px;
+    }
+    .form-title{
+        font-size: 2.2rem ; 
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-title,
+    .homePage-title{
+        font-size: 2.2rem ;
+        padding: 30px 10px 5px 10px;
+    }
+
+    .sec-title{
+        font-size: 1.2rem ;
+        padding: 14px 30px;
+    }  
+    .form-title{
+        font-size: 1.9rem ; 
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-title{
+        margin-top: 85px;
+    }  
+}
+
+@media screen and (max-width:500px) {
+    .main-title,
+    .homePage-title{
+        font-size: 2rem;
+        padding: 30px 10px 5px 10px;
+    }
+    .sec-title{
+        font-size: 1.1rem ;
+        padding: 14px 30px;
+    }   
+}
+

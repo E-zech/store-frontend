@@ -1,0 +1,28 @@
+
+.noResultsWrapper {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+height: 434px;
+width: 434px;
+border-radius: 50%;
+font-size: 1.5rem;
+margin-top: 50px;
+}
+
+.noResultsImg{
+    display: block;
+    margin: 10px auto;
+    width:300px ;
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:500px){
+    .noResultsWrapper{
+        font-size: 1.2rem;
+    }
+}
+
+
