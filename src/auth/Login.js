@@ -165,7 +165,7 @@ export default function Login() {
                             <Button
                                 sx={{ color: mode === 'dark' ? 'white' : 'black' }}
                                 onClick={() => { navigate('/signup') }}>
-                                Already have an account? Sign In
+                                Dont have an account? Sign up
                             </Button>
 
                         </Grid>
