@@ -85,7 +85,7 @@ export const homeIconStyleSmall = {
 
 export const darkModeBTN = {
     ml: 1, '@media screen and (max-width: 600px)': {
-        padding: 0
+        padding: "10px"
     }
 };
 
