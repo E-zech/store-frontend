@@ -2,6 +2,7 @@
 .tableContainer{
     height: auto;
     width: 90vw;
+    max-width: 2000px ;
     padding: 25px 15px 170px;
     margin: 0 auto;
     display: flex;
