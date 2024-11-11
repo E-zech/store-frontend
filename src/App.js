@@ -86,8 +86,11 @@ export default function App() {
                     }
                 })
                 .then(data => {
+    console.log(data)
                     setUser(data);
                     setUserRoleType(data.roleType);
+
+// setFavProducts of the user
                 })
                 .catch(err => {
                     setUserRoleType(RoleTypes.none);
