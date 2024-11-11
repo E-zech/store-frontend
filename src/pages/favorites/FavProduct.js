@@ -11,7 +11,8 @@ export default function FavProducts() {
     const { user, snackbar, loader, setLoader, products, selectedCategory, favProducts, setFavProducts, mainTitleMode } = useContext(GeneralContext);
 
     useEffect(() => {
-        setLoader(true);
+if (user) {
+ setLoader(true);
         fetch(`https://store-backend-midm.onrender.com/products/my-faves-products`, {
             credentials: 'include',
             headers: {
@@ -32,7 +33,9 @@ export default function FavProducts() {
                 setFavProducts(data);
                 setLoader(false);
             });
-    }, []);
+}
+       
+    }, [user]);
 
     return (
         <>
