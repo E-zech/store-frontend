@@ -43,6 +43,7 @@ export default function App() {
         localStorage.removeItem('token');
         setUser(null);
         setUserRoleType(RoleTypes.none);
+        setFavProducts([]);
         navigate('/');
         snackbar('You have been successfully logged out');
     };
