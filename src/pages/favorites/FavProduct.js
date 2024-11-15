@@ -10,8 +10,8 @@ import ResultResultNotFound from '../../utils/ResultNotFound';
 export default function FavProducts() {
     const { user, snackbar, loader, setLoader, products, selectedCategory, favProducts, setFavProducts, mainTitleMode } = useContext(GeneralContext);
 
-    useEffect(() => {
-if (user) {
+     useEffect(() => {
+
  setLoader(true);
         fetch(`https://store-backend-midm.onrender.com/products/my-faves-products`, {
             credentials: 'include',
@@ -33,9 +33,9 @@ if (user) {
                 setFavProducts(data);
                 setLoader(false);
             });
-}
+
        
-    }, [user]);
+    }, []);
 
     return (
         <>
